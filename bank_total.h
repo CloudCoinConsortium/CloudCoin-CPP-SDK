@@ -5,6 +5,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
+
 class BankTotal
 {
 	unsigned long int ones;
@@ -23,8 +24,8 @@ public:
 				unsigned long int twenty_fives,
 				unsigned long int hundreds,
 				unsigned long int two_hundred_fifties);
-	~BankTotal();
 
+	// Getters and Setters
 	unsigned long int 	get_ones() const;
 	void 				set_ones(const unsigned long int &value);
 	unsigned long int 	get_fives() const;
@@ -36,4 +37,6 @@ public:
 	unsigned long int 	get_two_hundred_fifties() const;
 	void 				set_two_hundred_fifties(const unsigned long int &value);
 	
+	// To String function
+	void to_s();
 };
