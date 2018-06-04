@@ -3,6 +3,7 @@
  * Author: Dipen Chauhan (https://github.com/overdrivemachines)
  */
 #include <iostream>
+#include <string>
 using namespace std;
 class BankKeys
 {
