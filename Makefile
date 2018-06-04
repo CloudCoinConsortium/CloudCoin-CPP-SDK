@@ -15,8 +15,11 @@ FILES = ./test
 
 all: $(FILES)
 
-test: test.cpp
-	$(CXX) $(CXXFLAGS) -o test test.cpp -lm
+test: test.cpp bank_keys.o
+	$(CXX) $(CXXFLAGS) -o test test.cpp bank_keys.o -lm
+
+bank_keys.o: bank_keys.h bank_keys.cpp
+	$(CXX) $(CXXFLAGS) -c bank_keys.cpp
 
 clean:
 	rm -f $(FILES) *.o *~ 
