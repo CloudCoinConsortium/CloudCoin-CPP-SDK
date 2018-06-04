@@ -20,4 +20,5 @@ public:
 	void 	set_private_key(const string &value);
 	string	get_email() const;
 	void 	set_email(const string &value);
+	void	to_s();
 };
