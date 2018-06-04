@@ -1,7 +1,23 @@
-class Bank_keys
+/**
+ * File Name: bank_keys.h
+ * Author: Dipen Chauhan (https://github.com/overdrivemachines)
+ */
+#include <iostream>
+using namespace std;
+class BankKeys
 {
+private:
+	string public_key;
+	string private_key;
+	string email;
 public:
-	Bank_keys();
-	~Bank_keys();
-	
+	BankKeys();
+	BankKeys(const string public_key, const string private_key, const string email);
+
+	string	get_public_key();
+	void 	set_public_key(const string &value);
+	string	get_private_key();
+	void 	set_private_key(const string &value);
+	string	get_email();
+	void 	set_email(const string &value);
 };
