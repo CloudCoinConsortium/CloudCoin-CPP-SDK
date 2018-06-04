@@ -14,10 +14,10 @@ public:
 	BankKeys();
 	BankKeys(const string public_key, const string private_key, const string email);
 
-	string	get_public_key();
+	string	get_public_key() const;
 	void 	set_public_key(const string &value);
-	string	get_private_key();
+	string	get_private_key() const;
 	void 	set_private_key(const string &value);
-	string	get_email();
+	string	get_email() const;
 	void 	set_email(const string &value);
 };
